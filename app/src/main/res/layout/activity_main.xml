@@ -17,23 +17,49 @@
         android:layout_marginTop="100dp"
         app:civ_border_color="@android:color/holo_green_light"/>
 
+    <SeekBar
+        android:id="@+id/seekBarTime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/leftTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/preSetTime"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/seekBarTime"
+        android:layout_marginLeft="65dp"/>
+
+    <TextView
+        android:id="@+id/rightTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/preSetTime"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/seekBarTime"
+        android:layout_marginLeft="310dp"/>
+
     <ImageButton
         android:id="@+id/playButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/play"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/playImg"
-        android:layout_marginTop="100dp"/>
+        android:layout_below="@id/seekBarTime"
+        android:layout_marginTop="50dp"/>
 
     <ImageButton
         android:id="@+id/pauseButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/pause"
-        android:layout_below="@id/playImg"
+        android:layout_below="@id/seekBarTime"
         android:layout_toLeftOf="@id/playButton"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="50dp"/>
 
     <ImageButton
@@ -41,9 +67,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/stop"
-        android:layout_below="@id/playImg"
+        android:layout_below="@id/seekBarTime"
         android:layout_toRightOf="@id/playButton"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"/>
 
 

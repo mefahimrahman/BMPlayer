@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BMPlayer</string>
+    <string name="preSetTime">00:00</string>
 </resources>
